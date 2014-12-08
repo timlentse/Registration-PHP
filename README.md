@@ -1,6 +1,6 @@
 ### Registration-PHP
 This is a Registration System with PHP,JS,Mysql,for demonstrating how to use PDO to handle form data and
-using ajax to send data to sever.
+using ajax to send data to server.
 ##### I assume that your machine  meets the following requirements:
 <pre>
 * PHP5.3 or above
@@ -10,7 +10,7 @@ using ajax to send data to sever.
 
 ### How to use   
 * Create a table   
-We should create a table to store the registration data the following command is an example.
+We should create a table for storing the registration data,the following command is an example.
 
 <pre>
 CREATE TABLE IF NOT EXISTS `account` (
