@@ -3,41 +3,40 @@ This is a Registration System with PHP,JS,Mysql,for demonstrating how to use PDO
 using ajax to send data to server.
 ##### I assume that your machine  meets the following requirements:
 <pre>
-* PHP5.3 or above
-* Mysql(or other database)
-* Apache2  
+ PHP5.3 or above
+ Mysql(or other database)
+ Apache2  
 </pre>
 
 ### How to use   
 * Create a table   
 We should create a table for storing the registration data,the following command is an example.
 
-<pre>
-CREATE TABLE IF NOT EXISTS `account` (
-  `id` varchar(50) DEFAULT NULL,
-  `passwd` varchar(32) DEFAULT NULL,
-  `tw` varchar(32) DEFAULT NULL,
-  `gplus` varchar(32) DEFAULT NULL,
-  `fb` varchar(32) DEFAULT NULL,
-  `firstname` varchar(15) DEFAULT NULL,
-  `lastname` varchar(15) DEFAULT NULL,
-  `phone` varchar(15) DEFAULT NULL,
-  `address` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf-8;
-</pre>  
+```mysql
+    CREATE TABLE IF NOT EXISTS `account` (
+      `id` varchar(50) DEFAULT NULL,
+      `passwd` varchar(32) DEFAULT NULL,
+      `tw` varchar(32) DEFAULT NULL,
+      `gplus` varchar(32) DEFAULT NULL,
+      `fb` varchar(32) DEFAULT NULL,
+      `firstname` varchar(15) DEFAULT NULL,
+      `lastname` varchar(15) DEFAULT NULL,
+      `phone` varchar(15) DEFAULT NULL,
+      `address` varchar(100) DEFAULT NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf-8;
+```  
 
 * Configure the dbinfo.php file(`srcipt/dbinfo.php`)
-<pre>
-<?php
-/**
- The configuration info for PDO.
-*/
-$user   = 'your-database-username';
-$passwd = 'your-database-password';
-//change the following line if necessary
-$dsn    = 'mysql:host=localhost;dbname=registration;';
 
-</pre>
+```php
+    /**
+     The configuration info for PDO.
+    */
+    $user   = 'your-database-username';
+    $passwd = 'your-database-password';
+    //change the following line if necessary
+    $dsn    = 'mysql:host=localhost;dbname=registration;';
+```
 
 * Make a try   
 Go to your browser and type `localhost/Registration-PHP` and you will see a registration form.
