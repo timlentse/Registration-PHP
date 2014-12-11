@@ -12,7 +12,7 @@ using ajax to send data to server.
 * Create a table   
 We should create a table for storing the registration data,the following command is an example.
 
-```mysql
+```sql
     CREATE TABLE IF NOT EXISTS `account` (
       `id` varchar(50) DEFAULT NULL,
       `passwd` varchar(32) DEFAULT NULL,
