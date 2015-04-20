@@ -14,7 +14,6 @@ using ajax to send data to server.
 We should create a table for storing the registration data,the following command is an example.
 
 ```sql
-<<<<<<< HEAD
   CREATE TABLE IF NOT EXISTS `account` (
     `id` varchar(50) DEFAULT NULL,
     `passwd` varchar(32) DEFAULT NULL,
@@ -26,19 +25,6 @@ We should create a table for storing the registration data,the following command
     `phone` varchar(15) DEFAULT NULL,
     `address` varchar(100) DEFAULT NULL
   ) ENGINE=InnoDB DEFAULT CHARSET=utf-8;
-=======
-    CREATE TABLE IF NOT EXISTS `account` (
-      `id` varchar(50) DEFAULT NULL,
-      `passwd` varchar(32) DEFAULT NULL,
-      `tw` varchar(32) DEFAULT NULL,
-      `gplus` varchar(32) DEFAULT NULL,
-      `fb` varchar(32) DEFAULT NULL,
-      `firstname` varchar(15) DEFAULT NULL,
-      `lastname` varchar(15) DEFAULT NULL,
-      `phone` varchar(15) DEFAULT NULL,
-      `address` varchar(100) DEFAULT NULL
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf-8;
->>>>>>> e88978527a2302c61760e11c4d9b8c1f0c12860f
 ```  
 
 * Configure the dbinfo.php file(`srcipt/dbinfo.php`)
